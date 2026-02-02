@@ -1,0 +1,13 @@
+name: Verify A16 Certificate
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run A16 verifier
+        run: |
+          python3 --version
+          python3 verify_A16.py --hash
