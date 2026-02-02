@@ -61,4 +61,24 @@ Citation
 If you reference this work, please cite the paper and repository URL, attributing Ian Adams & GPT-5.2.
 
 
-.
+.## Finite Certificate Verification (A₁₆)
+
+The finite predicate \(A_{16}\) was exhaustively verified using the reference
+implementation `verify_A16.py` with parameters \(m_0=16\), \(J=16\), and
+spike threshold \(K=4\). All 32,768 odd residues modulo \(2^{16}\) were
+checked across all lifts and the full horizon. No survivors were found.
+
+**Reproduction command**
+```bash
+python3 verify_A16.py --hash
+## Finite Certificate Verification (A₁₆)
+
+The finite predicate \(A_{16}\) was exhaustively verified using the reference
+implementation `verify_A16.py` with parameters \(m_0=16\), \(J=16\), and
+spike threshold \(K=4\). All 32,768 odd residues modulo \(2^{16}\) were
+checked across all lifts and the full horizon. No survivors were found.
+
+**Reproduction command**
+```bash
+python3 verify_A16.py --hashSHA256(witness-stream) = b3df1347d2396a9b6b6ff5bc35759ab317efc9339a0d7c14dfd75e7f95f3f08e
+Verification executed in Google Colab (Python 3.x) with successful termination
