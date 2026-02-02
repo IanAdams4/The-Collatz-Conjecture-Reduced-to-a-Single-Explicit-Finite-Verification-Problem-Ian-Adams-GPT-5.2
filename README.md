@@ -50,7 +50,7 @@ implementation `verify_A16.py` with parameters \(m_0 = 16\), \(J = 16\),
 and spike threshold \(K = 4\).
 
 All **32,768 odd residues modulo \(2^{16}\)** were checked across all lifts
-and the full horizon. **No survivors were found**, hence:
+and the full horizon. No survivors were found, hence:
 
 \[
 A_{16} = \varnothing.
