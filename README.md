@@ -73,3 +73,28 @@ As a research framework: pursue either (i) certified finite computation or (ii) 
 As a reference: reuse the finite-state forcing and compactness backbone in related dynamical problems.
 Citation
 If you reference this work, please cite the paper and repository URL, attributing Ian Adams & GPT-5.2.
+## Rigidity Certificate: Gate–Cycle Exclusion (m = 16)
+
+We directly verified the rigidity certificate at base precision m = 16 by computing the deterministic lift-state map \(F_m\) on the gate set \(I_m\) and checking the eventual directed cycle reached from each gate state.
+
+**Certificate statement**
+
+> No directed cycle in \((V_{16}, F_{16})\) intersects the gate \(I_{16}\).
+
+**Method**
+
+- Enumerate all gate states \(I_{16} = \{(2^{16}-1,\ell) : \ell \in \{1,3,5,7,9,11,13,15\}\}\).
+- For each gate state, iterate the deterministic lift-state map \(F_{16}\).
+- Use cycle detection to identify the eventual directed cycle.
+- Fail if any eventual cycle contains a gate state; pass otherwise.
+
+**Result**
+
+PASS — no directed cycle in \((V_{16}, F_{16})\) intersects \(I_{16}\).
+
+**Reproduction**
+
+```bash
+python3 verify_gate_cycle_m16.py
+SHA-256 Certificate Fingerprint (witness stream)
+b3df1347d2396a9b6b6ff5bc35759ab317efc9339a0d7c14dfd75e7f95f3f08e
