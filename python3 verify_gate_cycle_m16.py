@@ -49,5 +49,4 @@ def step_F(r: int, ell: int, m: int = 16) -> Tuple[int, int]:
 
     Start with x = r + ell*2^m (odd).
     Compute x_next = U(x) = (3x+1)/2^{v2(3x+1)}.
-    SHA-256 Certificate Fingerprint
-    b3df1347d2396a9b6b6ff5bc35759ab317efc9339a0d7c14dfd75e7f95f3f08e
+
